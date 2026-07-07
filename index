@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Seaside Shuttles | Outer Banks Airport Shuttle</title>
+
+<meta name="description" content="Private airport shuttle service from the Outer Banks to Norfolk (ORF) and Raleigh-Durham (RDU). Reliable, comfortable transportation for OBX visitors and residents.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f7f9fb;
+color:#333;
+line-height:1.7;
+}
+
+header{
+background:#0b5d7a;
+color:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+}
+
+.logo span{
+color:#ffd166;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
+
+nav a:hover{
+color:#ffd166;
+}
+
+.hero{
+
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80");
+
+background-size:cover;
+background-position:center;
+
+height:85vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+color:white;
+padding:20px;
+
+}
+
+.hero-content{
+
+max-width:800px;
+
+}
+
+.hero h1{
+
+font-size:58px;
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:22px;
+margin-bottom:35px;
+
+}
+
+.button{
+
+display:inline-block;
+
+padding:16px 34px;
+
+margin:10px;
+
+background:#ffd166;
+
+color:#333;
+
+text-decoration:none;
+
+border-radius:8px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.button:hover{
+
+background:white;
+
+}
+
+section{
+
+padding:80px 10%;
+
+}
+
+h2{
+
+text-align:center;
+
+font-size:38px;
+
+color:#0b5d7a;
+
+margin-bottom:45px;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:14px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.card h3{
+
+color:#0b5d7a;
+
+margin-bottom:15px;
+
+}
+
+.price{
+
+font-size:30px;
+
+color:#0b5d7a;
+
+font-weight:bold;
+
+margin:15px 0;
+
+}
+
+.about{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+.about img{
+
+width:100%;
+
+border-radius:12px;
+
+}
+
+.review-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:25px;
+
+}
+
+.review{
+
+background:white;
+
+padding:30px;
+
+border-left:5px solid #ffd166;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+border-radius:8px;
+
+}
+
+.review h4{
+
+margin-top:20px;
+
+color:#0b5d7a;
+
+}
+
+.cta{
+
+background:#0b5d7a;
+
+color:white;
+
+text-align:center;
+
+border-radius:12px;
+
+}
+
+.cta h2{
+
+color:white;
+
+}
+
+footer{
+
+background:#062d3a;
+
+color:white;
+
+text-align:center;
+
+padding:40px;
+
+}
+
+footer a{
+
+color:#ffd166;
+
+text-decoration:none;
+
+}
+
+@media(max-width:850px){
+
+.about{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+header{
+
+flex-direction:column;
+
+}
+
+nav{
+
+margin-top:15px;
+
+}
+
+nav a{
+
+margin:0 10px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+Seaside <span>Shuttles</span>
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="routes.html">Routes & Rates</a>
+
+<a href="reviews.html">Reviews</a>
+
+<a href="faq.html">FAQ</a>
+
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Airport Shuttle Service from the Outer Banks</h1>
+
+<p>
+
+Private, comfortable transportation between the Outer Banks and Norfolk (ORF) or Raleigh-Durham (RDU) airports.
+
+Serving visitors and locals with dependable, door-to-door service.
+
+</p>
+
+<a class="button" href="contact.html">Book Your Ride</a>
+
+<a class="button" href="mailto:seasideshuttles@proton.me">Email Us</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Our Airport Routes</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Norfolk International Airport (ORF)</h3>
+
+<p>
+
+Our most popular route. Enjoy reliable transportation between your Outer Banks vacation rental or home and ORF.
+
+</p>
+
+<div class="price">
+
+Starting at $180 One-Way
+
+</div>
+
+<p>
+
+Perfect for family vacations, business travel, and military personnel.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Raleigh-Durham International Airport (RDU)</h3>
+
+<p>
+
+Need a ride to RDU? We've got you covered with comfortable, private transportation.
+
+</p>
+
+<div class="price">
+
+Starting at $325 One-Way
+
+</div>
+
+<p>
+
+Great for domestic and international flights.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="about">
+
+<div>
+
+<h2 style="text-align:left;">Welcome to Seaside Shuttles</h2>
+
+<p>
+
+Thank you for making our first season such a success!
+
+As we begin our second season serving the beautiful Outer Banks, our goal remains the same: dependable, stress-free airport transportation with friendly, local service.
+
+</p>
+
+<br>
+
+<p>
+
+Whether you're traveling from Corolla, Duck, Southern Shores, Kitty Hawk, Kill Devil Hills, Nags Head, Manteo, or Hatteras Island, we'll get you to the airport safely and comfortably.
+
+</p>
+
+<br>
+
+<p>
+
+Skip the rental car and parking hassles—let us handle the drive while you relax.
+
+</p>
+
+</div>
+
+<div>
+
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1000&q=80">
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>What Our Customers Said Last Summer</h2>
+
+<div class="review-grid">
+
+<div class="review">
+
+★★★★★
+
+<p>
+
+"Our driver arrived early, helped with all our luggage, and got us to ORF with plenty of time before our flight. Excellent service!"
+
+</p>
+
+<h4>
+
+Sarah M. • July 2025
+
+</h4>
+
+</div>
+
+<div class="review">
+
+★★★★★
+
+<p>
+
+"We'll definitely use Seaside Shuttles again next summer. Friendly driver, spotless SUV, and excellent communication."
+
+</p>
+
+<h4>
+
+Chris T. • August 2025
+
+</h4>
+
+</div>
+
+<div class="review">
+
+★★★★★
+
+<p>
+
+"Traveling with kids can be stressful, but this was by far the easiest part of our vacation."
+
+</p>
+
+<h4>
+
+Amanda R. • June 2025
+
+</h4>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>
+
+Ready for a Stress-Free Airport Ride?
+
+</h2>
+
+<p style="font-size:20px;margin-top:20px;">
+
+Private transportation between the Outer Banks and ORF or RDU airports.
+
+</p>
+
+<br>
+
+<a class="button" href="contact.html">
+
+Contact Seaside Shuttles
+
+</a>
+
+</section>
+
+<footer>
+
+<p>
+
+<strong>Seaside Shuttles</strong>
+
+</p>
+
+<p>
+
+Outer Banks, North Carolina
+
+</p>
+
+<p>
+
+Serving ORF & RDU
+
+</p>
+
+<br>
+
+<p>
+
+📧
+
+<a href="mailto:seasideshuttles@proton.me">
+
+seasideshuttles@proton.me
+
+</a>
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 Seaside Shuttles • Proudly Serving the Outer Banks
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
