@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Seaside Shuttles | Airport Transportation | Outer Banks</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    line-height:1.6;
+    color:#333;
+    background:#f7f9fb;
+}
+
+header{
+    background:linear-gradient(rgba(0,65,100,.75),rgba(0,65,100,.75)),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero{
+    max-width:850px;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.3rem;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    background:#0099cc;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:40px;
+    font-size:1.1rem;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0077a8;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:white;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+nav .container{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+}
+
+.logo{
+    font-weight:bold;
+    font-size:1.4rem;
+    color:#004164;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav li{
+    margin-left:25px;
+}
+
+nav a{
+    color:#333;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    padding:80px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#004164;
+    font-size:2.2rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,.08);
+}
+
+.price-table{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 6px 20px rgba(0,0,0,.08);
+}
+
+.price-table table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.price-table th{
+    background:#004164;
+    color:white;
+    padding:18px;
+}
+
+.price-table td{
+    padding:18px;
+    border-bottom:1px solid #eee;
+}
+
+.review{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 18px rgba(0,0,0,.08);
+}
+
+.review h4{
+    color:#004164;
+    margin-bottom:8px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact form{
+    max-width:600px;
+    margin:auto;
+}
+
+input,textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+button{
+    padding:15px 35px;
+    background:#0099cc;
+    color:white;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:1rem;
+}
+
+button:hover{
+    background:#0077a8;
+}
+
+footer{
+    background:#004164;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:700px){
+
+.hero h1{
+font-size:2.3rem;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<div class="container">
+
+<div class="logo">Seaside Shuttles</div>
+
+<ul>
+<li><a href="#services">Services</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</div>
+</nav>
+
+<header>
+
+<div class="hero">
+
+<h1>Reliable Airport Shuttle Service for the Outer Banks</h1>
+
+<p>Comfortable, dependable transportation between the Outer Banks and Norfolk (ORF) or Raleigh-Durham (RDU) airports. Private rides. Professional service. Local drivers.</p>
+
+<a class="btn" href="#contact">Request a Ride</a>
+
+</div>
+
+</header>
+
+<section id="services">
+
+<div class="container">
+
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Airport Transfers</h3>
+<p>Private transportation between the Outer Banks and Norfolk International (ORF) or Raleigh-Durham International (RDU).</p>
+</div>
+
+<div class="card">
+<h3>Vacation Arrivals</h3>
+<p>Start your beach vacation stress-free with direct transportation to your rental home or hotel.</p>
+</div>
+
+<div class="card">
+<h3>Business Travel</h3>
+<p>Professional transportation for executives, corporate visitors, conferences, and remote teams.</p>
+</div>
+
+<div class="card">
+<h3>Door-to-Door Service</h3>
+<p>No shared rides or unnecessary stops. We pick you up and drop you off exactly where you need to be.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="pricing">
+
+<div class="container">
+
+<h2>Simple Pricing</h2>
+
+<div class="price-table">
+
+<table>
+
+<tr>
+<th>Service</th>
+<th>Starting Price</th>
+</tr>
+
+<tr>
+<td>Outer Banks ⇄ ORF (One Way)</td>
+<td><strong>$180</strong></td>
+</tr>
+
+<tr>
+<td>Outer Banks ⇄ ORF (Round Trip)</td>
+<td><strong>$340</strong></td>
+</tr>
+
+<tr>
+<td>Outer Banks ⇄ RDU (One Way)</td>
+<td><strong>$310</strong></td>
+</tr>
+
+<tr>
+<td>Outer Banks ⇄ RDU (Round Trip)</td>
+<td><strong>$595</strong></td>
+</tr>
+
+</table>
+
+</div>
+
+<p style="text-align:center;margin-top:25px;">
+Prices vary by pickup location and group size. Contact us for a personalized quote.
+</p>
+
+</div>
+
+</section>
+
+<section id="reviews">
+
+<div class="container">
+
+<h2>What Our Riders Say</h2>
+
+<div class="cards">
+
+<div class="review">
+<h4>★★★★★ Sarah M.</h4>
+<p>"Our flight landed late at ORF, but our driver was waiting for us. Clean vehicle, friendly service, and a smooth ride all the way to Duck."</p>
+</div>
+
+<div class="review">
+<h4>★★★★★ Michael T.</h4>
+<p>"Far easier than renting a car. Communication was excellent and pickup was exactly on time."</p>
+</div>
+
+<div class="review">
+<h4>★★★★★ Coastal Tech Solutions</h4>
+<p>"We've used Seaside Shuttles for multiple executive airport transfers. They're consistently punctual, professional, and dependable for our visiting clients."</p>
+</div>
+
+<div class="review">
+<h4>★★★★★ Emily & Jason</h4>
+<p>"Perfect start to our vacation. We booked round-trip service and everything went exactly as planned."</p>
+</div>
+
+<div class="review">
+<h4>★★★★★ David R.</h4>
+<p>"Great value compared to airport parking and rental cars. Highly recommended for anyone visiting the Outer Banks."</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container contact">
+
+<h2>Request a Quote</h2>
+
+<p style="margin-bottom:30px;">
+Tell us your pickup location, destination, travel date, and number of passengers.
+</p>
+
+<form action="mailto:seasideshuttles@proton.me" method="post" enctype="text/plain">
+
+<input
+type="text"
+name="Name"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+name="Email"
+placeholder="Your Email"
+required>
+
+<textarea
+name="Trip Details"
+rows="6"
+placeholder="Pickup location, destination, travel date, passengers..."
+required></textarea>
+
+<button type="submit">
+Send Request
+</button>
+
+</form>
+
+<p style="margin-top:35px;font-size:1.1rem;">
+📧 <strong>seasideshuttles@proton.me</strong>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Seaside Shuttles • Airport Transportation for the Outer Banks
+</p>
+
+</footer>
+
+<script>
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+
+anchor.addEventListener("click",function(e){
+
+e.preventDefault();
+
+document.querySelector(this.getAttribute("href")).scrollIntoView({
+behavior:"smooth"
+});
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
